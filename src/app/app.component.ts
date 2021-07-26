@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'curs16-checkpoints';
+  sidebarOpened = false;
+
+  toggleSidebar(event: any) {
+    console.log("hello")
+    this.sidebarOpened = !this.sidebarOpened;
+  }
 }
